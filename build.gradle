@@ -31,10 +31,10 @@ task stage() {
 	dependsOn clean, war
 }
 war.mustRunAfter clean
-
+implementation
 task copyToLib(type: Copy) {
 	into "$buildDir/server"
-	from(configurations.compile) {
+	from(configurations.implementation) {
 		include "webapp-runner*"
 	}
 }
