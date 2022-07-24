@@ -1,1 +1,1 @@
-web: java $JAVA_OPTS -jar build/libs/customers-0.0.1-SNAPSHOT.jar --port $PORT build/*.war
+web: java -Dserver.port=$PORT $JAVA_OPTS -jar build/libs/customers-0.0.1-SNAPSHOT.jar build/*.war
