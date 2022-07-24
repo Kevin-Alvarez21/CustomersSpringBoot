@@ -1,1 +1,1 @@
-web: java -jar build/libs/customers-0.0.1-SNAPSHOT.war --spring.profiles.active=prod
+web: java $JAVA_OPTS -jar build/libs/customers-0.0.1-SNAPSHOT.jar --port $PORT build/*.war
