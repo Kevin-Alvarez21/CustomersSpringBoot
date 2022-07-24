@@ -1,1 +1,1 @@
-web: java -jar build/libs/customers-0.0.1-SNAPSHOT.war
+web: java -jar build/server/webapp-runner-*.jar build/libs/*.war
